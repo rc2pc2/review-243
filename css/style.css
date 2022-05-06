@@ -1,0 +1,73 @@
+body{
+    font-family: "Montserrat", sans-serif;
+    background-color: #7fffd4;
+}
+
+header{
+    background-color: white;
+    height: 5rem;
+}
+
+header div.header-wrapper{
+    height: 5rem;
+    line-height: 5rem;
+    vertical-align: middle;
+}
+
+header div.header-start,
+header div.header-start img{
+    height: 100%;
+    line-height: 5rem;
+}
+
+main{
+    padding: 2rem;
+    margin-top: 3rem;
+    height: calc(95vh - 10rem);
+}
+
+footer{
+    background-color: white;
+    height: 5rem;
+}
+
+div#grid{
+    margin: 0 auto;
+    width: 600px;
+    height: 600px;
+}
+
+div#grid .square{
+    border: 1px black solid;
+    float: left;
+    /* width: calc(100% / 8);
+    height: calc(100% / 8); */
+    cursor: crosshair;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+div#grid .square > span {
+    color: darkblue;
+}
+
+div#grid .square.clicked,
+div#grid .square.clicked span  {
+    background-color: rgb(22, 22, 109);
+    color: white;
+}
+
+div#grid .square.clicked-bomb,
+div#grid .square.clicked-bomb span  {
+    background-color: rgb(133, 6, 6);
+    color: white;
+}
+
+.clearfix::after{
+    content: '';
+    clear: both;
+    display: table;
+}
